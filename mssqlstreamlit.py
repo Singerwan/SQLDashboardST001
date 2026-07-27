@@ -10,9 +10,19 @@ st.set_page_config(layout="wide")
 MscfSqldfPrb=pd.read_excel('./assets/salesarchive.xlsx')
 
 # header 
-st.title('Dashboard via SQL')
+st.title('Simple Dashboard With Interactive Map ')
 vidfile=open("./assets/videos/sql.mp4","rb").read()
-st.video(vidfile,loop=True, autoplay=True, muted=False )
+st.video(vidfile,loop=True, autoplay=True, muted=True )
+
+st.set_page_config(layout="wide")
+import streamlit.components.v1 as components
+
+
+
+with open("worldmapint.html", "r", encoding="utf-8") as html_file:
+    html_content = html_file.read()
+
+components.html(html_content,height=500)
 # audio same syntax as video = only exception the required  format argument
 # double check data types 
 with st.expander('Display DataTypes of all columns'):
