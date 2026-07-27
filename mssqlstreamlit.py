@@ -113,3 +113,31 @@ elif chart_type=='3D Scatter Plot':
                       title='3D Scatter Plot of Sales DataFrame') 
     st.plotly_chart(fig)
     
+
+
+pdf_viewer(
+"worldmap.pdf",
+width=1200,
+height=1000,
+zoom_level=1.2,
+viewer_align="center",
+show_page_separator=False
+)
+
+pdf_viewer(
+"chinamap.pdf",
+width=1200,
+height=1000,
+zoom_level=1.2,
+viewer_align="center",
+show_page_separator=False
+)
+
+pdf_viewer(
+"guangdongmap.pdf",
+width=1200,
+height=1000,
+zoom_level=1.2,
+viewer_align="center",
+show_page_separator=False
+)
