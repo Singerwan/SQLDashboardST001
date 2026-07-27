@@ -8,7 +8,7 @@ st.set_page_config(layout="wide")
 
 
 MscfSqldfPrb1=pd.read_excel('./assets/salesarchive.xlsx')
-MscfSqldfPrb=MscfSqldfPrb1.sample(pct=0.2)
+MscfSqldfPrb=MscfSqldfPrb1.sample(frac=0.2)
 # header 
 st.title('Simple Dashboard With Interactive Map ')
 vidfile=open("./assets/videos/sql.mp4","rb").read()
